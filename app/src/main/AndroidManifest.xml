@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alzheimer">
         <activity
-            android:name=".CreateAccount"
+            android:name=".view.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Alzheimer.NoActionBar" />
+        <activity
+            android:name=".model.CreateAccount"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

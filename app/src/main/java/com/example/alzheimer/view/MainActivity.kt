@@ -1,10 +1,11 @@
-package com.example.alzheimer
+package com.example.alzheimer.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
-import com.example.alzheimer.databinding.ActivityMainBinding as
+import com.example.alzheimer.databinding.ActivityMainBinding
+import com.example.alzheimer.model.CreateAccount
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -53,9 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showHome(email: String){
-        /*val homeIntent = Intent(this, HomeActivity::class.java).apply {
-            putExtra("email", email)
-        }
-        startActivity(homeIntent)*/
+        val homeIntent = Intent(this, HomeActivity::class.java)
+        startActivity(homeIntent)
     }
 }
