@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Alzheimer</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget">Olviaste tu contraseña haz clic AQUI</string>
+    <string name="singIn">Iniciar sesion</string>
+    <string name="createAcount">Crear cuenta</string>
+    <string name="register">Registro</string>
+    <string name="name">Nombre</string>
+    <string name="registrar">Registrar</string>
+    <string name="conexion">No es posible establecer la conexion con python</string>
+    <string name="errorAuth">Se ha producido un error autenticando al usuario</string>
+    <string name="logTag">signInWithEmail:failure</string>
+    <string name="authentication">Los campos no deben estar vacios</string>
+    <string name="doctor">Doctor</string>
+    <string name="patient">Pasiente</string>
+    <string name="nurse">Enfermera</string>
+    <string name="family">Familiar</string>
+    <string name="next">Continuar</string>
+    <string name="identity">Te identificas con:</string>
+    <string name="campos">Se deben llenar todos los campos para continuar</string>
+    <string name="speciality">Especialidad</string>
+    <string name="phoneNumber">Numero de telefono</string>
+    <string name="cedula">Cedula</string>
 </resources>
