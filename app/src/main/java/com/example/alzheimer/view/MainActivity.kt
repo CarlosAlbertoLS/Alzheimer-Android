@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                         binding.editTextTextPassword.text.toString())
                     .addOnCompleteListener {
                         if (it.isSuccessful){
-                            showHome(it.result?.user?.email ?: "")
+                            showHome()
                         }else {
                             showAlert()
                         }
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(email: String){
+    private fun showHome(){
         val homeIntent = Intent(this, HomeActivity::class.java)
         startActivity(homeIntent)
     }

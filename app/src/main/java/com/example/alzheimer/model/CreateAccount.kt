@@ -3,19 +3,24 @@ package com.example.alzheimer.model
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.RadioGroup
+import android.widget.Toast
 import com.example.alzheimer.view.HomeActivity
 import com.example.alzheimer.databinding.ActivityCreateAccountBinding
 import com.example.alzheimer.model.firebase.AuthFirebase
+import com.example.alzheimer.view.PatientActivity
 
-class CreateAccount : AppCompatActivity() {
+class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
     private lateinit var binding: ActivityCreateAccountBinding
-    val authfirebase = AuthFirebase()
+    private val authfirebase = AuthFirebase()
+    var opcionIntent: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         createAccount()
+        binding.radioGrup.setOnCheckedChangeListener(this)
     }
 
     private fun createAccount() {
@@ -25,8 +30,34 @@ class CreateAccount : AppCompatActivity() {
         binding.btnRegistro.setOnClickListener {
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 authfirebase.getDataUser(email.toString(), password.toString())
-                val homeIntent = Intent(this, HomeActivity::class.java)
-                startActivity(homeIntent)
+                Toast.makeText(this, "$opcionIntent", Toast.LENGTH_SHORT).show()
+                when (opcionIntent){
+                    1-> {
+                        val homeIntent = Intent(this, PatientActivity::class.java)
+                        startActivity(homeIntent)
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onCheckedChanged(p0: RadioGroup?, idRadio: Int) {
+        when (idRadio){
+            binding.radioButtonPatient.id -> {
+                Toast.makeText(this, "Patient", Toast.LENGTH_SHORT).show()
+                opcionIntent = 1
+            }
+            binding.radioButtonFamily.id -> {
+                Toast.makeText(this, "Family", Toast.LENGTH_SHORT).show()
+                opcionIntent = 2
+            }
+            binding.radioButtonDoctor.id -> {
+                Toast.makeText(this, "Doctor", Toast.LENGTH_SHORT).show()
+                opcionIntent = 3
+            }
+            binding.radioButtonNurse.id -> {
+                Toast.makeText(this, "Nurse", Toast.LENGTH_SHORT).show()
+                opcionIntent = 4
             }
         }
     }
