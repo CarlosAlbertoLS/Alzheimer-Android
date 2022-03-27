@@ -33,8 +33,7 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
                 Toast.makeText(this, "$opcionIntent", Toast.LENGTH_SHORT).show()
                 when (opcionIntent){
                     1-> {
-                        val homeIntent = Intent(this, PatientActivity::class.java)
-                        startActivity(homeIntent)
+                        showPatientActivity(email.toString())
                     }
                 }
             }
@@ -44,7 +43,6 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
     override fun onCheckedChanged(p0: RadioGroup?, idRadio: Int) {
         when (idRadio){
             binding.radioButtonPatient.id -> {
-                Toast.makeText(this, "Patient", Toast.LENGTH_SHORT).show()
                 opcionIntent = 1
             }
             binding.radioButtonFamily.id -> {
@@ -60,5 +58,12 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
                 opcionIntent = 4
             }
         }
+    }
+
+    fun showPatientActivity(email: String){
+        val homeIntent = Intent(this, PatientActivity::class.java).apply {
+            putExtra("mail", email)
+        }
+        startActivity(homeIntent)
     }
 }

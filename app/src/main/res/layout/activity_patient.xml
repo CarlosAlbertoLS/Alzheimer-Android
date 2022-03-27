@@ -41,13 +41,13 @@
             android:text="@string/name" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:hint="@string/name" />
+            android:hint="@string/name"
+            android:inputType="textNoSuggestions"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView11"
@@ -60,9 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:hint="@string/phoneNumber" />
+            android:hint="@string/phoneNumber"
+            android:inputType="phone"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView12"
@@ -91,9 +91,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:hint="@string/weight" />
+            android:hint="@string/weight"
+            android:inputType="phone"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView14"
@@ -106,9 +106,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:hint="@string/height" />
+            android:hint="@string/height"
+            android:inputType="number|phone"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/button"
