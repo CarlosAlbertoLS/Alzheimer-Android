@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.alzheimer.databinding.ActivityPatientBinding
-import com.example.alzheimer.model.firebase.DbFirestorePatient
+import com.example.alzheimer.model.firebase.DbFirestoreAll
 
 class PatientActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPatientBinding
@@ -37,7 +37,7 @@ class PatientActivity : AppCompatActivity() {
         val birthday = binding.editBirthday.text
         val weight = binding.editTextTextPersonName5.text
         val height = binding.editTextTextPersonName6.text
-        val dbfirestore = DbFirestorePatient()
+        val dbfirestore = DbFirestoreAll()
         binding.button.setOnClickListener {
             if (!name.isNullOrEmpty()) {
                 val homeIntent = Intent(this, HomeActivity::class.java)

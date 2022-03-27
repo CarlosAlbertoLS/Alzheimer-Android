@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.example.alzheimer.view.HomeActivity
 import com.example.alzheimer.databinding.ActivityCreateAccountBinding
 import com.example.alzheimer.model.firebase.AuthFirebase
+import com.example.alzheimer.view.DoctorAndNurseActivity
 import com.example.alzheimer.view.PatientActivity
 
 class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
@@ -35,9 +36,19 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
                     1-> {
                         showPatientActivity(email.toString())
                     }
+                    3,4 ->{
+                        showDoctorAndNurseActivity(email.toString())
+                    }
                 }
             }
         }
+    }
+
+    private fun showDoctorAndNurseActivity(email: String) {
+        val homeIntent = Intent(this, DoctorAndNurseActivity::class.java).apply {
+            putExtra("mail", email)
+        }
+        startActivity(homeIntent)
     }
 
     override fun onCheckedChanged(p0: RadioGroup?, idRadio: Int) {

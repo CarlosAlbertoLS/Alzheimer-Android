@@ -3,7 +3,7 @@ package com.example.alzheimer.model.firebase
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
-class DbFirestorePatient {
+class DbFirestoreAll {
     private val db = FirebaseFirestore.getInstance()
 
     fun saveDataUserPatient(email: String, name: String, phoneNumber: String, birthday: String,
@@ -17,11 +17,13 @@ class DbFirestorePatient {
         )
     }
 
-    fun setDataUserPatient(email: String):String{
-        var name: String =""
-        db.collection("Patients").document(email).get().addOnSuccessListener {
-            name = (it.get("Name") as String?).toString()
-        }
-        return name
+    fun saveDataUserDoctorAndNurse(email: String, name: String, phoneNumber: String, speciality: String,
+                            cedula: String,){
+        db.collection("Patients").document(email).set(
+            hashMapOf("Name" to name,
+                "Phone Number" to phoneNumber,
+                "Speciality" to speciality,
+                "Cedula" to cedula)
+        )
     }
 }
