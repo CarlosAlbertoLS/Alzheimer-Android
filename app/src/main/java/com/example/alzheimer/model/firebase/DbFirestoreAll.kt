@@ -12,14 +12,14 @@ class DbFirestoreAll {
             hashMapOf("Name" to name,
             "Phone Number" to phoneNumber,
             "Birthday" to birthday,
-            "Weight" to weight,
-            "Height" to height)
+            "Weight" to weight+"Kgr",
+            "Height" to height+"Mts")
         )
     }
 
     fun saveDataUserDoctorAndNurse(email: String, name: String, phoneNumber: String, speciality: String,
                             cedula: String,){
-        db.collection("Patients").document(email).set(
+        db.collection("Doctors and Nurses").document(email).set(
             hashMapOf("Name" to name,
                 "Phone Number" to phoneNumber,
                 "Speciality" to speciality,

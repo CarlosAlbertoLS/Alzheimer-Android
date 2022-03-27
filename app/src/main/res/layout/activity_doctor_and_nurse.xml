@@ -25,13 +25,13 @@
             android:text="@string/name" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/nameedtit"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:hint="@string/name" />
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView17"
@@ -40,7 +40,7 @@
             android:text="@string/phoneNumber" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -54,7 +54,7 @@
             android:text="@string/speciality" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/speciality"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -69,7 +69,7 @@
             android:text="@string/cedula" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/cedula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

@@ -11,6 +11,7 @@
     <string name="conexion">No es posible establecer la conexion con python</string>
     <string name="errorAuth">Se ha producido un error autenticando al usuario</string>
     <string name="logTag">signInWithEmail:failure</string>
+    <string name="nameedtit">Nombre(s) Apellidos</string>
     <string name="authentication">Los campos no deben estar vacios</string>
     <string name="doctor">Doctor</string>
     <string name="patient">Pasiente</string>
