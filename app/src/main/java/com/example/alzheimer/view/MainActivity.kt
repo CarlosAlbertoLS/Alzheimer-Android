@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         createAccount()
         singIn()
+
     }
 
     private fun createAccount() {
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                         binding.editTextTextPassword.text.toString())
                     .addOnCompleteListener {
                         if (it.isSuccessful){
-                            showHome()
+                            showHome(binding.editTextTextEmailAddress.text.toString())
                         }else {
                             showAlert()
                         }
@@ -53,8 +54,10 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(){
-        val homeIntent = Intent(this, HomeActivity::class.java)
+    private fun showHome(email: String){
+        val homeIntent = Intent(this, HomeActivity::class.java).apply {
+            putExtra("email", email)
+        }
         startActivity(homeIntent)
     }
 }
