@@ -33,4 +33,7 @@
     <string name="doctorandnurse">Registro Doctor / Enfermera</string>
     <string name="patientName">Nombre del pasiente</string>
     <string name="emailPatient">Correo del pasiente</string>
+    <string name="codelia">Codelia</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>
