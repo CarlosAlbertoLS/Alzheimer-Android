@@ -40,7 +40,9 @@ class PatientActivity : AppCompatActivity() {
         val dbfirestore = DbFirestoreAll()
         binding.button.setOnClickListener {
             if (!name.isNullOrEmpty()) {
-                val homeIntent = Intent(this, HomeActivity::class.java)
+                val homeIntent = Intent(this, HomeActivity::class.java).apply {
+                    putExtra("email", email)
+                }
                 Toast.makeText(this, "$birthday", Toast.LENGTH_SHORT).show()
                 dbfirestore.saveDataUserPatient(email, name.toString(), number.toString(),
                     birthday.toString(), weight.toString(), height.toString())

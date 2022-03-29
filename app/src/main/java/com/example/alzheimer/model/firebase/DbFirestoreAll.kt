@@ -25,4 +25,14 @@ class DbFirestoreAll {
                 "Cedula" to cedula)
         )
     }
+
+    fun saveDataUserFamily(email: String, name: String, phoneNumber: String, namePatient: String,
+                                   emailPatient: String,){
+        db.collection("Family").document(email).set(
+            hashMapOf("Name" to name,
+                "Phone Number" to phoneNumber,
+                "Name Patient" to namePatient,
+                "Email Patient" to emailPatient)
+        )
+    }
 }

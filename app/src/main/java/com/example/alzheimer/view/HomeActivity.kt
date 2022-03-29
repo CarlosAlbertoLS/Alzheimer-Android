@@ -13,6 +13,10 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val bundle: Bundle? = intent.extras
+        val email = bundle?.getString("email")
+
+        binding.textView2.setText(email).toString()
     }
     fun setDataUserPatient(email: String) {
         db.collection("Patients").document(email).get().addOnSuccessListener {

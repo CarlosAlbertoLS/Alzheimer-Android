@@ -9,6 +9,7 @@ import com.example.alzheimer.view.HomeActivity
 import com.example.alzheimer.databinding.ActivityCreateAccountBinding
 import com.example.alzheimer.model.firebase.AuthFirebase
 import com.example.alzheimer.view.DoctorAndNurseActivity
+import com.example.alzheimer.view.FamilyActivity
 import com.example.alzheimer.view.PatientActivity
 
 class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
@@ -33,8 +34,11 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
                 authfirebase.getDataUser(email.toString(), password.toString())
                 Toast.makeText(this, "$opcionIntent", Toast.LENGTH_SHORT).show()
                 when (opcionIntent){
-                    1-> {
+                    1 -> {
                         showPatientActivity(email.toString())
+                    }
+                    2 -> {
+                        showFamilyActivity(email.toString())
                     }
                     3,4 ->{
                         showDoctorAndNurseActivity(email.toString())
@@ -42,6 +46,13 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
                 }
             }
         }
+    }
+
+    private fun showFamilyActivity(email: String) {
+        val homeIntent = Intent(this, FamilyActivity::class.java).apply {
+            putExtra("mail", email)
+        }
+        startActivity(homeIntent)
     }
 
     private fun showDoctorAndNurseActivity(email: String) {
@@ -71,7 +82,7 @@ class CreateAccount : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
         }
     }
 
-    fun showPatientActivity(email: String){
+    private fun showPatientActivity(email: String){
         val homeIntent = Intent(this, PatientActivity::class.java).apply {
             putExtra("mail", email)
         }
