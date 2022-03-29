@@ -1,7 +1,6 @@
 package com.example.alzheimer.model.firebase
 
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
 
 class DbFirestoreAll {
     private val db = FirebaseFirestore.getInstance()

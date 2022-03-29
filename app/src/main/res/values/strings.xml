@@ -17,6 +17,7 @@
     <string name="patient">Pasiente</string>
     <string name="nurse">Enfermera</string>
     <string name="family">Familiar</string>
+    <string name="familyRegister">Registro del Familiar</string>
     <string name="next">Continuar</string>
     <string name="identity">Te identificas con:</string>
     <string name="campos">Se deben llenar todos los campos para continuar</string>
@@ -30,4 +31,6 @@
     <string name="height">Altura</string>
     <string name="blood">Tipo de sangre</string>
     <string name="doctorandnurse">Registro Doctor / Enfermera</string>
+    <string name="patientName">Nombre del pasiente</string>
+    <string name="emailPatient">Correo del pasiente</string>
 </resources>

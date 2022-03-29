@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alzheimer">
         <activity
+            android:name=".view.FamilyActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.DoctorAndNurseActivity"
             android:exported="false" />
         <activity
