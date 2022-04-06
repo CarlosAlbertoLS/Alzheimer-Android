@@ -37,6 +37,9 @@
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="singOut">Cerrar sesion</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createVideo">Grabar video</string>
+    <string name="uploadVideo">Subir video</string>
+    <string name="processVideo">Procesar video</string>
+    <string name="start">Inicio</string>
+    <string name="Video">Implementación video</string>
 </resources>

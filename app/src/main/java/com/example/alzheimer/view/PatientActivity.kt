@@ -12,7 +12,6 @@ class PatientActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityPatientBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.editBirthday.setOnClickListener { showDatePikerDialog() }
@@ -28,7 +27,7 @@ class PatientActivity : AppCompatActivity() {
     }
 
     fun onDaySeleccted(day:Int, month:Int, year:Int){
-        binding.editBirthday.setText("$day/$month/$year")
+        binding.editBirthday.setText("$day/$month/$year").toString()
     }
 
     private fun intentHomeActivity(email: String) {

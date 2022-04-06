@@ -11,6 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.alzheimer.R
 import com.example.alzheimer.databinding.ActivityHomeBinding
+import com.example.alzheimer.databinding.FragmentVideoBinding
 import com.google.android.material.navigation.NavigationView
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -80,5 +81,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        replaceFragment(fragment = HomeFragment(), "Inicio")
     }
 }
