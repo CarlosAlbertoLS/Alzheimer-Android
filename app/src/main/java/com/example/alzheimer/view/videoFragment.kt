@@ -2,6 +2,7 @@ package com.example.alzheimer.view
 
 import android.Manifest
 import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,6 +14,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.alzheimer.R
+import com.example.alzheimer.VideoActivity
 import com.example.alzheimer.databinding.FragmentVideoBinding
 import java.security.Permission
 
@@ -38,21 +40,24 @@ class videoFragment() : Fragment() {
             if (ContextCompat.checkSelfPermission(video.context, permissions) != PackageManager.PERMISSION_GRANTED) {
                 requestCameraPermission()
             } else {
-                openCamera()
+                if (permissions == Manifest.permission.CAMERA) {
+                     openCamera()
+                }
             }
         }
     }
 
     private fun openCamera() {
         val video:Button = (view?.findViewById<Button>(R.id.btnGrabarVideo) ?: "") as Button
+        val videoIntent = Intent(video.context, VideoActivity::class.java)
+        startActivity(videoIntent)
         Toast.makeText(video.context,"Abriendo camara",Toast.LENGTH_SHORT).show()
     }
 
     private fun requestCameraPermission() {
         val video:Button = (view?.findViewById<Button>(R.id.btnGrabarVideo) ?: "") as Button
         for (permissions in permissions) {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(video.context as Activity, permissions)
-            ) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(video.context as Activity, permissions)) {
                 Toast.makeText(video.context, "Permisos rechazados", Toast.LENGTH_SHORT).show()
             } else {
                 //Toast.makeText(video.context, permissions,Toast.LENGTH_SHORT).show()
