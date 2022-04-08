@@ -1,5 +1,6 @@
 package com.example.alzheimer.view
 
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,8 +11,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.alzheimer.R
+import com.example.alzheimer.VideoActivity
 import com.example.alzheimer.databinding.ActivityHomeBinding
-import com.example.alzheimer.databinding.FragmentVideoBinding
 import com.google.android.material.navigation.NavigationView
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -50,12 +51,17 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.nav_item_one -> replaceFragment(HomeFragment(),item.title.toString())
-            R.id.nav_item_two -> replaceFragment(videoFragment(),item.title.toString())
+            R.id.nav_item_two -> videoActivityFirebase()
             R.id.nav_item_three -> Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
         }
 
         drawer.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun videoActivityFirebase(){
+        val intent = Intent(this, VideoActivity::class.java)
+        startActivity(intent)
     }
 
     private fun replaceFragment(fragment: Fragment, title: String){

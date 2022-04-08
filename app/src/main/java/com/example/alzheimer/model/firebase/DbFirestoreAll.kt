@@ -2,8 +2,9 @@ package com.example.alzheimer.model.firebase
 
 import com.google.firebase.firestore.FirebaseFirestore
 
-class DbFirestoreAll {
+class DbFirestoreAll() {
     private val db = FirebaseFirestore.getInstance()
+    private lateinit var email:String
 
     fun saveDataUserPatient(email: String, name: String, phoneNumber: String, birthday: String,
                                    weight: String, height: String){
@@ -14,6 +15,7 @@ class DbFirestoreAll {
             "Weight" to weight+"Kgr",
             "Height" to height+"Mts")
         )
+        this.email = email
     }
 
     fun saveDataUserDoctorAndNurse(email: String, name: String, phoneNumber: String, speciality: String,

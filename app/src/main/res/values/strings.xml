@@ -42,4 +42,6 @@
     <string name="processVideo">Procesar video</string>
     <string name="start">Inicio</string>
     <string name="Video">Implementación video</string>
+    <string name="selecVideo">Seleccionar video</string>
+    <style name="cargarVideo">Cargar video</style>
 </resources>
