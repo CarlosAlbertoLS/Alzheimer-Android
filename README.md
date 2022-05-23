@@ -33,4 +33,12 @@ si el usuario no se encuentra registrado debe realizar el registro que al inicio
 
 la pantalla de este formulario se visualiza de la siguiente manera:
 
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-130049_Alzheimer.jpg?alt=media&token=97803ca7-629f-4124-94e3-65ccc4860042" width="175"/>
+
+al registrarse como pasiente se habre otro formulario con datos especificos como se puede observar:
+
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-114734_Alzheimer.jpg?alt=media&token=8984a24a-2116-4eb9-90a0-607e9bb56405" width="175"/>
+
+tanto como si el usuario esta registrado e inicia sesión como cuando el usuario que no estaba registrado termina de llanar los formularios, se va a mostrar la pantalla de inicio donde se puede observar datos de que es el Alzheimer y sus tipos, esta pantalla se isualiza de la siguiente manera:
+
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115613_Alzheimer.jpg?alt=media&token=6965fbb0-6baa-47c8-9130-9fcdc034f1de" width="175"/>
