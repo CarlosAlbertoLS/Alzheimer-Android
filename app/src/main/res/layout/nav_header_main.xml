@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/navHeaderTextView"
         android:paddingTop="16dp"
-        android:text="@string/codelia"
+        android:text="@string/patientName"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>

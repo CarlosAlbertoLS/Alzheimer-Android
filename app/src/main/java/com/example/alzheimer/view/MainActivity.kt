@@ -1,9 +1,11 @@
 package com.example.alzheimer.view
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import com.example.alzheimer.BuildConfig
 import com.example.alzheimer.databinding.ActivityMainBinding
 import com.example.alzheimer.model.CreateAccount
 import com.google.firebase.auth.FirebaseAuth
@@ -17,7 +19,23 @@ class MainActivity : AppCompatActivity() {
 
         createAccount()
         singIn()
+        forggot()
+        version()
+    }
 
+    private fun version() {
+        binding.tVversion.text = "V."+BuildConfig.VERSION_NAME
+    }
+
+    private fun forggot() {
+        binding.textViewForgot.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Recuperación de contraseña")
+            builder.setMessage("Se realizara un proceso de recuperación de contraseña")
+            builder.setPositiveButton("Continuar", null)
+            builder.setNegativeButton("Cancelar", null)
+            builder.show()
+        }
     }
 
     private fun createAccount() {

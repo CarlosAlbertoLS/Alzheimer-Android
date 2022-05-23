@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Alzheimer</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
     <string name="forget">Olviaste tu contraseña haz clic AQUI</string>
     <string name="singIn">Iniciar sesion</string>
     <string name="createAcount">Crear cuenta</string>
@@ -33,7 +33,6 @@
     <string name="doctorandnurse">Registro Doctor / Enfermera</string>
     <string name="patientName">Nombre del pasiente</string>
     <string name="emailPatient">Correo del pasiente</string>
-    <string name="codelia">Codelia</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="singOut">Cerrar sesion</string>
@@ -43,5 +42,44 @@
     <string name="start">Inicio</string>
     <string name="Video">Implementación video</string>
     <string name="selecVideo">Seleccionar video</string>
+    <string name="gencita">Generar cita</string>
+    <string name="citaspendientes">Citas Pendientes</string>
     <style name="cargarVideo">Cargar video</style>
+
+    <string name="queEs">¿Que es el alzheimer?</string>
+    <string name="tipo1">Alzheimer Etapa Leve (Etapa Temprana)</string>
+    <string name="tipo2">Alzheimer Etapa Moderada (Etapa Media)</string>
+    <string name="tipo3">Alzheimer Etapa Grave (Etapa Final)</string>
+    <string name="Tecnologias">Tecnologias</string>
+    <string name="alzheimer">El Alzheimer es una
+        enfermedad que afecta a las células del
+        cerebro (neuronas), provocando que se
+        degeneren y mueran. Quienes la padecen
+        presentan un deterioro progresivo en la
+        capacidad para procesar el pensamiento
+        (memoria, orientación, lenguaje, aprendizaje,
+        cálculo, etc.).</string>
+    <string name="AT1">En esta etapa del AI, los
+        individuos logran desarrollarse de manera
+        independiente en su entorno, considerando
+        actividades como: conducir, laborar y participar
+        en actividades sociales. Sin embargo, puede que
+        lleguen a sentir por lapsos, episodios de pérdida
+        de memoria. Casos como estos pueden ser: olvidar
+        palabras comunes, déficit de concentración e incluso,
+        olvidar la ubicación de algunos objetos cotidianos.</string>
+    <string name="AT2">En esta etapa el AZ es la más longeva,
+        pues su desarrollo puede durar varios años en el paciente,
+        y conforme este avanza, la persona requerirá mayor cuidado y atención.
+        Aquí las personas pueden tener aún una mayor complejidad para la retención
+        de la memoria, e incluso realizar actividades de coordinación y/o destreza,
+        pero logran recordar momentos significativos de su vida.</string>
+    <string name="AT3">En esta última etapa del AZ, los pacientes pierden la
+        capacidad de responder a su entorno, de concretar una conversación
+        coherente y eventualmente, serán incapaces de controlar sus movimientos.
+        Su comunicación se torna difícil pues solo llegan a mencionar un pequeño
+        número de palabras y muestran dificultad para pronunciarlas llegando al
+        punto de balbucear.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

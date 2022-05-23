@@ -10,10 +10,7 @@ import android.icu.text.CaseMap.Title
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.widget.Button
-import android.widget.MediaController
-import android.widget.Toast
-import android.widget.VideoView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -31,6 +28,7 @@ class VideoActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
     var mediaController: MediaController? = null
     private lateinit var videoView:VideoView
+    private lateinit var downloadUri:Uri
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +56,9 @@ class VideoActivity : AppCompatActivity() {
 
     private fun videoViewController() {
         videoView = binding.videoView
+        val ligaVideo:EditText = binding.txvUri
+        ligaVideo.text.clear()
+        ligaVideo.text.append(downloadUri.toString())
         if (mediaController == null){
             mediaController = MediaController(this)
             mediaController!!.setAnchorView(this.videoView)
@@ -81,7 +82,7 @@ class VideoActivity : AppCompatActivity() {
         storageReference.putFile(videoUri!!).addOnSuccessListener{ taskSnapshot ->
             val uriTask = taskSnapshot.storage.downloadUrl
             while (!uriTask.isSuccessful);
-            val downloadUri = uriTask.result
+            downloadUri = uriTask.result
             if (uriTask.isSuccessful){
                 val hashMap = HashMap<String, Any>()
                 hashMap["id"] = timestamp

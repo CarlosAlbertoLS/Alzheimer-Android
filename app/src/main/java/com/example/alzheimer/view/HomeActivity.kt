@@ -52,7 +52,8 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_item_one -> replaceFragment(HomeFragment(),item.title.toString())
             R.id.nav_item_two -> videoActivityFirebase()
-            R.id.nav_item_three -> Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
+            R.id.nav_item_three -> replaceFragment(techFragment(),item.title.toString())
+            R.id.nav_item_six, R.id.nav_item_seven -> Toast.makeText(this, "Proximamente...", Toast.LENGTH_SHORT).show()
         }
 
         drawer.closeDrawer(GravityCompat.START)

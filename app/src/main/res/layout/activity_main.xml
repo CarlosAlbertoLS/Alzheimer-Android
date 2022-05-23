@@ -80,12 +80,15 @@
             android:layout_width="match_parent"
             android:layout_height="25dp" />
 
-        <TextView
-            android:id="@+id/textView3"
+        <Button
+            android:id="@+id/textViewForgot"
+            style="@style/Widget.Material3.Button.TextButton.Dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="@string/forget" />
+            android:text="@string/forget"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -103,6 +106,10 @@
                 android:layout_height="wrap_content"
                 android:foregroundGravity="bottom"
                 android:text="@string/createAcount"
+                android:textColor="@color/orange"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/orange"
                 app:layout_constraintBaseline_toTopOf="parent" />
 
             <Space
@@ -115,9 +122,20 @@
                 android:layout_height="wrap_content"
                 android:foregroundGravity="center"
                 android:text="@string/singIn"
+                android:textColor="@color/orange"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/orange"
                 app:layout_constraintBaseline_toTopOf="parent" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tVversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="15dp"/>
 
 
     </LinearLayout>

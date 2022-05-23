@@ -15,18 +15,18 @@
         <item
             android:id="@+id/nav_item_three"
             android:icon="@drawable/common_full_open_on_phone"
-            android:title="Item 3"/>
+            android:title="@string/Tecnologias"/>
     </group>
     <item android:title="Title 1">
         <menu>
             <item
                 android:id="@+id/nav_item_six"
                 android:icon="@drawable/common_full_open_on_phone"
-                android:title="Item 6"/>
+                android:title="@string/gencita"/>
             <item
                 android:id="@+id/nav_item_seven"
                 android:icon="@drawable/common_full_open_on_phone"
-                android:title="Item 7"/>
+                android:title="@string/citaspendientes"/>
         </menu>
     </item>
 </menu>

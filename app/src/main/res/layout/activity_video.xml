@@ -26,7 +26,11 @@
                 android:id="@+id/btnSeleccionar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/selecVideo" />
+                android:text="@string/selecVideo"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/orange"
+                android:textColor="@color/orange"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -36,7 +40,11 @@
                 android:id="@+id/btnUploadVideoFirebase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/uploadVideo" />
+                android:text="@string/uploadVideo"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/orange"
+                android:textColor="@color/orange"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -46,7 +54,11 @@
                 android:id="@+id/btnProccessVideo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/processVideo" />
+                android:text="@string/processVideo"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/orange"
+                android:textColor="@color/orange"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -56,6 +68,16 @@
                 android:id="@+id/videoView"
                 android:layout_width="match_parent"
                 android:layout_height="350dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <EditText
+                android:id="@+id/txvUri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
