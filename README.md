@@ -42,3 +42,13 @@ al registrarse como pasiente se habre otro formulario con datos especificos como
 tanto como si el usuario esta registrado e inicia sesión como cuando el usuario que no estaba registrado termina de llanar los formularios, se va a mostrar la pantalla de inicio donde se puede observar datos de que es el Alzheimer y sus tipos, esta pantalla se isualiza de la siguiente manera:
 
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115613_Alzheimer.jpg?alt=media&token=6965fbb0-6baa-47c8-9130-9fcdc034f1de" width="175"/>
+
+si el usuario interactua con el menu se visualizara de la siguiente manera:
+
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115905_Alzheimer.jpg?alt=media&token=7584ee03-fc6c-489e-aefd-13ee608f6172" width="175"/>
+
+La parte principal del proyecto es poder grabar o cargar un video para que pueda ser anaizado con la red neuronal [aqui va el otro repositorio](https://www.google.com/) las siguientes imagenes muestran el apartado de video de la aplicacion, la seleccion de donde sera tomado el video y la carga de este
+
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115620_Alzheimer.jpg?alt=media&token=23b70fe9-bb93-4470-9d10-e6bf0e6c47e0" width="175"/>
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115629_Alzheimer.jpg?alt=media&token=99a6609e-da1b-4f0c-a746-bc2c234acce1" width="175"/>
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115727_Alzheimer.jpg?alt=media&token=0df9bdb7-40bc-4a2c-a48a-232aaf8c5a46" width="175"/>
