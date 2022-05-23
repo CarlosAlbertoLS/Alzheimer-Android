@@ -52,3 +52,7 @@ La parte principal del proyecto es poder grabar o cargar un video para que pueda
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115620_Alzheimer.jpg?alt=media&token=23b70fe9-bb93-4470-9d10-e6bf0e6c47e0" width="175"/>
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115629_Alzheimer.jpg?alt=media&token=99a6609e-da1b-4f0c-a746-bc2c234acce1" width="175"/>
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115727_Alzheimer.jpg?alt=media&token=0df9bdb7-40bc-4a2c-a48a-232aaf8c5a46" width="175"/>
+
+pra probar a aplicación se puede descargar aquí:
+
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2Fqr-code%20(1).png?alt=media&token=b0e28b8b-180a-4f62-9329-3ac084256803" width="175"/>
