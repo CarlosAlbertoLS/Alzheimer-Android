@@ -53,6 +53,6 @@ La parte principal del proyecto es poder grabar o cargar un video para que pueda
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115629_Alzheimer.jpg?alt=media&token=99a6609e-da1b-4f0c-a746-bc2c234acce1" width="175"/>
 >><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-115727_Alzheimer.jpg?alt=media&token=0df9bdb7-40bc-4a2c-a48a-232aaf8c5a46" width="175"/>
 
-pra probar a aplicación se puede descargar [aquí](https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/apk%2FAlzheimer.apk?alt=media&token=01419bf8-10b3-4ba1-b1c8-4216b3be58ed):
+pra probar a aplicación se puede descargar [aquí](https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2Fqr-code.png?alt=media&token=5eb4597a-9d28-44db-90c8-84a156cca50b):
 
->><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2Fqr-code%20(1).png?alt=media&token=b0e28b8b-180a-4f62-9329-3ac084256803" width="350"/>
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2Fqr-code.png?alt=media&token=5eb4597a-9d28-44db-90c8-84a156cca50b" width="350"/>
