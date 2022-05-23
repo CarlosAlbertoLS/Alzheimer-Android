@@ -18,3 +18,9 @@ se listaran las versiones de las librerias usadas
   * gradle Plugin Version 7.1.3
   - Gradle Version 7.2
   + Android Studio 2021.2.1
+
+***Detalles e imagenes de la aplicación***
+
+Al iniciar la aplicación esta lanzara un Splash Screen mientras carga los datos, pasados unos segundos se mostrara la pantalla principal donde se muestra un formulario y para iniciar seción junto con los batones de inicio, registro de usuario y la solicitud de recuperar la contraseña esta interfaz se visualiza de la siguiente forma
+
+![Inicio de la aplicación](gs://alzheimer-50944.appspot.com/Img/Screenshot_20220523-114102_Alzheimer.jpg)
