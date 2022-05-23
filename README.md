@@ -23,4 +23,4 @@ se listaran las versiones de las librerias usadas
 
 Al iniciar la aplicación esta lanzara un Splash Screen mientras carga los datos, pasados unos segundos se mostrara la pantalla principal donde se muestra un formulario y para iniciar seción junto con los batones de inicio, registro de usuario y la solicitud de recuperar la contraseña esta interfaz se visualiza de la siguiente forma
 
-![Inicio de la aplicación]([gs://alzheimer-50944.appspot.com/Img/Screenshot_20220523-114102_Alzheimer.jpg](https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-114102_Alzheimer.jpg?alt=media&token=3fbff22d-c805-4eaf-89e3-9db4f360a630))
+![Inicio de la aplicación](https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FScreenshot_20220523-114102_Alzheimer.jpg?alt=media&token=3fbff22d-c805-4eaf-89e3-9db4f360a630)
