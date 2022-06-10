@@ -29,7 +29,7 @@ si el usuario no se encuentra registrado debe realizar el registro que al inicio
 + Pasiente
 + Familiar
 + Doctor
-+ Enfermera/o
++ Cuidador
 
 la pantalla de este formulario se visualiza de la siguiente manera:
 
@@ -55,4 +55,4 @@ La parte principal del proyecto es poder grabar o cargar un video para que pueda
 
 para probar a aplicación se puede descargar [aquí](https://firebasestorage.googleapis.com/v0/b/titulacionalzheimer.appspot.com/o/app%2FAlzheimer.apk?alt=media&token=1924e7b9-b052-48b6-a5f1-19dcc4bcb838):
 
->><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2Fqr-code.png?alt=media&token=5eb4597a-9d28-44db-90c8-84a156cca50b" width="350"/>
+>><img src="https://firebasestorage.googleapis.com/v0/b/alzheimer-50944.appspot.com/o/Img%2FQR.png?alt=media&token=17eb8398-3c0f-410b-b4d4-716c2c92212c" width="350"/>
